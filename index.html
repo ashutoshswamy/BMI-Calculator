@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="text/javascript">
+      function calculateBMI() {
+        const weightvalue = document.getElementById("weightinput").value;
+        const heightvalue = document.getElementById("heightinput").value;
+        const result = document.getElementById("result");
+        const weight = Number(weightvalue);
+        const height = Number(heightvalue);
+        const bmi = weight / (height * height);
+
+        if (bmi < 18.5) {
+          result.innerHTML = `Your BMI is ${bmi.toFixed(
+            3
+          )}, this means you are underweight`;
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+          result.innerHTML = `Your BMI is ${bmi.toFixed(
+            3
+          )}, this means you are healthy`;
+        } else if (bmi >= 25.0 && bmi <= 29.9) {
+          result.innerHTML = `Your BMI is ${bmi.toFixed(
+            3
+          )}, this means you are overweight`;
+        } else if (bmi >= 30.0) {
+          result.innerHTML = `Your BMI is ${bmi.toFixed(
+            3
+          )}, this means you are obese`;
+        } else {
+          result.innerHTML = "Please enter the above values";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 class="title">BMI Calculator</h1>
+    <h2 class="weightinfo">Enter your weight in kg</h2>
+    <div class="weightdiv">
+      <input
+        class="weightinput"
+        id="weightinput"
+        placeholder="Weight"
+        type="number"
+      />
+    </div>
+    <h2 class="heightinfo">Enter your height in m</h2>
+    <div class="heightdiv">
+      <input
+        class="heightinput"
+        id="heightinput"
+        placeholder="Height"
+        type="number"
+      />
+    </div>
+    <div class="buttondiv">
+      <button class="calculatebutton" onclick="calculateBMI()">
+        Calculate
+      </button>
+    </div>
+    <div class="resultdiv">
+      <h1 class="result" id="result"></h1>
+    </div>
+    <div class="devinfo">
+      <h3>
+        Developed by Ashutosh Swamy<br />GitHub -
+        <a href="https://github.com/ItzAshu397">Click Here</a>
+      </h3>
+    </div>
+  </body>
+</html>
