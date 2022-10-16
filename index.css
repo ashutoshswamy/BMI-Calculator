@@ -1,0 +1,61 @@
+body {
+  font-family: "Fredoka", sans-serif;
+  color: #083d55;
+  background-color: #1e90ff;
+}
+
+h1.title {
+  padding-top: 25px;
+  text-align: center;
+}
+
+h3.weightinfo {
+  padding-top: 25px;
+  text-align: center;
+}
+
+div.weightdiv {
+  text-align: center;
+}
+
+input.weightinput {
+  text-align: center;
+  width: 150px;
+  height: 20px;
+}
+
+h3.heightinfo {
+  padding-top: 25px;
+  text-align: center;
+}
+
+div.heightdiv {
+  text-align: center;
+}
+
+input.heightinput {
+  text-align: center;
+  width: 150px;
+  height: 20px;
+}
+
+button.calculatebutton {
+  text-align: center;
+  width: 155px;
+  height: 28px;
+}
+
+div.buttondiv {
+  padding-top: 50px;
+  text-align: center;
+}
+
+div.resultdiv {
+  padding-top: 25px;
+  text-align: center;
+}
+
+div.devinfo {
+  padding-top: 25px;
+  text-align: center;
+}
